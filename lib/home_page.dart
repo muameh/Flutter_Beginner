@@ -46,11 +46,33 @@ class MyHomePage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(5),
-              child: TextButton(onPressed: () {}, child: const Text("TextButton")),
+              child: TextButton(
+                onPressed: () {},
+                child: const Text("TextButton"),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(5),
-              child: OutlinedButton(onPressed: () {}, child: const Text("OutlinedButton")),
+              child: OutlinedButton(
+                onPressed: () {},
+                child: const Text("OutlinedButton"),
+              ),
+            ),
+            OutlinedButton.icon(
+              onPressed: () {},
+              icon: const Icon(Icons.add),
+              label: Text("OutlinedButton.icon"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+              onPressed: () {},
+              child: const Padding(
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0, right: 8.0, left: 8.0),
+                child: Text(
+                  "Place Bid",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             )
           ],
         ),
